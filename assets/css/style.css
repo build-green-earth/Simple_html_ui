@@ -1,0 +1,142 @@
+* {
+  box-sizing: border-box;
+}
+
+/* Style the header */
+.header {
+  border: 2px solid #eee;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: white;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+}
+
+.header .menu ul {
+  display: flex;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #f8f9fa;
+  font-family: "Josefin Sans", sans-serif;
+  line-height: 1.5;
+}
+
+.header .logo {
+  padding-left: 30px;
+}
+
+.header .menu ul {
+  display: flex;
+  list-style: none;
+}
+
+.header .menu ul li {
+  margin: 20px 10px;
+}
+
+.header .menu ul a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #2c404c;
+}
+
+.header .menu ul a.active {
+  color: #fcb720;
+}
+
+.h-col {
+  padding: auto;
+  margin: auto;
+}
+
+.phone {
+  font-size: 110%;
+  color: #333;
+  padding-right: 40px;
+}
+
+.header .nav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+/* Container for flexboxes */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Create three equal columns that sits next to each other */
+.column {
+  -ms-flex: 1;
+  flex: 30%;
+  padding: 20px;
+  margin: 20px;
+  height: initial;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 5px 5px #fff;
+  background-color: #fff;
+  border: solid 1px #fff;
+  border-radius: 10px;
+}
+
+/* Style the footer */
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #f8f8f8;
+  padding: 10px;
+  text-align: center;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.f-col {
+  margin: auto;
+  padding: auto;
+}
+
+.f-col a {
+  color: #2c404c;
+}
+
+.col-icon {
+  display: flex;
+  justify-content: space-between;
+}
+
+.col-person {
+  display: flex;
+  justify-content: left;
+}
+
+.person-item {
+  margin: 5px;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  .row {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+}
